@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :admins
   get 'home/index'
 	devise_for :users
 	authenticated :user do
